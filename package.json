@@ -1,0 +1,21 @@
+{
+  "name": "free-music-streaming",
+  "version": "1.0.0",
+  "description": "A free music streaming website similar to Spotify without premium restrictions",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd backend && npm run dev",
+    "client:dev": "cd frontend && npm run dev",
+    "server:install": "cd backend && npm install",
+    "client:install": "cd frontend && npm install",
+    "install-all": "npm run server:install && npm run client:install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["music", "streaming", "free", "spotify", "royalty-free"],
+  "author": "Free Music Streaming",
+  "license": "MIT"
+}
